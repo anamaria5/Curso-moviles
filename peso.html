@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Indice de masa corporal</title>
+<script>
+
+function calcular()
+{
+	function masa(peso, talla)
+	{
+		this.peso = peso;
+		this.talla = talla;
+		this.calcular=funcCalcular;
+		function funcCalcular()
+		{
+			var imc=this.peso/(this.talla/100)^2;
+			return imc;
+		}
+	}
+	var valorPeso=document.getElementById("peso");
+	var valorTalla=document.getElementById("talla");
+	var funcion = new masa(valorPeso,valorTalla);
+	var nuevo = funcion.calcular();
+	if (nuevo < 18.5)
+	{ 
+	}
+	
+	
+}
+</script>
+</head>
+<body>
+<p>Peso (kg)
+  <input type="text" id="peso" />
+</p>
+<p>Talla (cm)
+  <input type="text" id="talla" />
+</p>
+<input type="button" onclick="calcular()" value="Calcular" />
+</body>
+</html>

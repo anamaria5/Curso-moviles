@@ -2,9 +2,50 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>primera</title>
+<title>Formulario de inscripción</title>
 </head>
 
-<body>HOLA MUNDO
+<body>
+<h1>Formulario de Inscripción</h1>
+
+
+Nombre :
+<br />
+<input type="text"/>
+<br />
+Login :
+<br />
+<input type="text"/>
+<br />
+Contraseña :
+<br />
+<input type="password"/>
+<br />
+
+<br />
+<label>Sexo:</label>
+Masculino<input type="radio" name="sexo"/>
+Femenino<input type="radio" name="sexo"/>
+<br />
+<br />
+<label>Gustos:</label>
+Jugar Futbol<input type="checkbox" name="gustos"/>
+Ir a cine<input type="checkbox" name="gustos"/>
+Bailar<input type="checkbox" name="gustos"/>
+Viajar<input type="checkbox" name="gustos"/>
+<br /><br />
+<label>Opinión:</label>
+<br />
+<textarea rows="10" cols="10"></textarea>
+<br />
+<label>Ciudad:</label>
+<select id="opciones"
+<option value="1">Medellin </option>
+<option value="2">Bogota </option>
+<option value="3" selected="selected">Manizales </option>
+<option value="4">Cartagena </option>
+</select>
+<br />
+<input type="button" value="Enviar"/>
 </body>
 </html>
